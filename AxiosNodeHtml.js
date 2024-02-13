@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.use(express.static(__dirname + '/public/'));
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", async (req, res) => {
     try {
@@ -81,6 +81,6 @@ app.get("/delete/:id", async (req, res) => {
     }
 });
 
-app.listen(5500, () => {
-    console.log('Server stated on port 5500');
+app.listen(3500, () => {
+    console.log('Server stated on port 3500');
 });
