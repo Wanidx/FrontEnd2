@@ -81,6 +81,6 @@ app.get("/delete/:id", async (req, res) => {
     }
 });
 
-app.listen(3500, () => {
-    console.log('Server stated on port 3500');
+app.listen(5500, () => {
+    console.log('Server stated on port 5500');
 });
